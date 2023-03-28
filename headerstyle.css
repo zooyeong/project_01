@@ -1,0 +1,68 @@
+li{
+  list-style-type: none;
+}
+
+.logo{
+  font-size: 50px;
+  font-family: 'HSJiptokki-Black';
+  color: rgb(255, 135, 135);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.nav{
+  position: absolute;
+  right: 0px;
+}
+
+.nav-item{
+  float: left;
+  margin-right: 50px;
+}
+
+.banner{
+  text-align: center;
+  margin-top: 50px;
+  height: 0;
+}
+
+.banner-item{
+  display: inline-block;
+  width: 200px;
+  font-size: 2rem;
+  font-family: 'KIMM_Bold';
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: 'HSJiptokki-Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSJiptokki-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KIMM_Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ban-inner-con{
+  height: 0;
+  /* overflow: hidden; */
+}
+
+.ban-inner{
+  width: 100%;
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.ban-inner li{
+  /* text-align: center; */
+}

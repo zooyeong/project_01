@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="headerstyle.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      margin: 0 auto;
+      font-size: 3rem;
+      text-align: center;
+      color: rgb(255, 135, 135);
+      font-weight: bolder;
+    }
+
+    h1,
+    .welcome {
+      text-align: center;
+      margin: 10px 0px;
+      font-family: 'KIMM_Bold';
+    }
+
+    form {
+      border: 1px solid rgb(216, 217, 207);
+      padding: 50px 50px;
+      margin: 0 auto;
+      width: 600px;
+      border-radius: 10px;
+    }
+
+    .inputJoin {
+      width: 100%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid lightgray;
+    }
+
+    .star {
+      color: red;
+    }
+
+    #nation{
+      width: 30%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid lightgray;
+      color: gray;
+    }
+
+    .inputPhoneNum{
+      width: 68.8%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid lightgray;
+      color: gray;
+    }
+
+    .essential{
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    .agreeContent {
+      border: 1px solid lightgray;
+      padding: 10px 10px;
+      margin: 10px 0;
+      font-size: 0.8rem;
+      height: 120px;
+      overflow: scroll;
+    }
+
+    .agreeCheck {
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+
+    .btn {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: medium;
+    }
+
+    .pfont {
+      font-weight: 600;
+    }
+
+    .btnSubmit {
+      background-color: rgb(255, 135, 135);
+    }
+
+    .btnReset {
+      background-color: rgb(216, 217, 207);
+    }
+
+    .btn-temp{
+      position: relative;
+    }
+
+    .btnCheck{
+      position: absolute;
+      top: 13px;
+      right: 5px;
+      width: 25%;
+      height: 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(216, 217, 207);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <p class="logo">JUDYº</p>
+    <h1>회원가입</h1>
+    <p class="welcome">회원이 되어 다양한 혜택을 경험해보세요!</p>
+    <form>
+      <p class="pfont">아이디<span class="star">*</span></p>
+      <div class="btn-temp">
+        <input type="text" class="inputJoin" placeholder="아이디 입력(6~10자)">
+        <button type="button" class="btnCheck">중복확인</button>
+      </div>
+
+      <p class="pfont">비밀번호<span class="star">*</span></p>
+      <input type="password" class="inputJoin" placeholder="비밀번호 입력(특수문자 포함 8~20자)">
+
+      <p class="pfont">비밀번호 확인<span class="star">*</span></p>
+      <input type="password" class="inputJoin" placeholder="비밀번호 재입력">
+
+      <p class="pfont">이름<span class="star">*</span></p>
+      <input type="text" class="inputJoin" placeholder="이름 입력">
+
+      <p class="pfont">휴대폰번호 입력<span class="star">*</span></p>
+      <div class="btn-temp">
+        <select name="nation" id="nation">
+          <option value="korea">대한민국 +82</option>
+          <option value="korea">가나 +233</option>
+          <option value="korea">네덜란드 +31</option>
+          <option value="korea">라오스 +856</option>
+          <option value="korea">멕시코 +52</option>
+          <option value="korea">미국/캐나다 +1</option>
+          <option value="korea">브라질 +55</option>
+          <option value="korea">수리남 +597</option>
+          <option value="korea">싱가포르 +65</option>
+          <option value="korea">영국 +44</option>
+        </select>
+        <input type="text" class="inputPhoneNum">
+        <button type="button" class="btnCheck">인증번호 발송</button>
+      </div>
+
+      <p class="pfont">이메일주소 입력</p>
+      <input type="text" class="inputJoin" placeholder="이메일주소 입력(선택)">
+      
+      <p class="essential"><span class="star">*</span>는 필수입력란입니다.</p>
+
+      <p class="pfont">정보 제공 동의</p>
+      <p class="agreeContent"><span style="font-weight: 600;">1. 개인정보 수집 목적 및 이용</span><br> 회원 가입의사 확인, 회원제 서비스 제공에 따른
+        본인 식별·인증, 회원자격 유지·관리, 제한적 본인 확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리시 법정대리인의 동의여부 확인, 각종 고지·통지, 고충처리
+        등의 목적으로 개인정보 수집 동의를 구하고 있습니다.<br><br><span style="font-weight: 600;">2. 개인정보 제3자 제공 동의</span><br>「정보통신망 이용촉진 및
+        정보보호 등에 관한 법률」은 요금정산을 위해 필요한 경우나 다른 법률에 특별한 규정이 있는 경우를 제외하고 정보통신서비스제공자가 개인정보를 제3자에게 제공한다는 사실을 이용자에게 미리 알리고 동의를
+        받은 경우에만 그 개인정보를 제3자에게 제공할 수 있도록 하고 있습니다. 또한, 정보통신서비스제공자나 그로부터 이용자의 개인정보를 제공받은 사람이 이용자의 개인정보 수집ㆍ보관ㆍ처리 등의 업무를
+        제3자에게 위탁하려는 경우에도 이용자에게 알리고 동의를 받도록 하고 있습니다.</p>
+      <span>동의<input type="checkbox" class="agreeCheck"></span>
+      <span>비동의<input type="checkbox" class="agreeCheck"></span><br>
+
+      <div class="btn">
+        <button type="submit" class="btnSubmit">가입하기</button>
+        <button type="reset" class="btnReset">가입취소</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

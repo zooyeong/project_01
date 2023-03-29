@@ -1,0 +1,12 @@
+.main_content1{
+  width: 100%;
+  height: 400px;
+  /* background: url('images/image_mojito.jpg'); */
+  /* background-size: cover; */
+}
+
+.main_content1 img{
+  width: 100%;
+  height: 400px;
+  object-fit:cover
+}

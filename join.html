@@ -14,19 +14,17 @@
       box-sizing: border-box;
     }
 
-    .logo {
-      margin: 0 auto;
-      font-size: 3rem;
-      text-align: center;
-      color: rgb(255, 135, 135);
-      font-weight: bolder;
-    }
-
     h1,
     .welcome {
       text-align: center;
       margin: 10px 0px;
       font-family: 'KIMM_Bold';
+      
+    }
+    
+    .welcome{
+      position: relative;
+      color: rgb(131, 122, 117);
     }
 
     form {
@@ -50,7 +48,7 @@
     }
 
     #nation{
-      width: 30%;
+      width: 25%;
       height: 30px;
       margin: 10px 0;
       padding-left: 10px;
@@ -59,7 +57,7 @@
     }
 
     .inputPhoneNum{
-      width: 68.8%;
+      width: 13%;
       height: 30px;
       margin: 10px 0;
       padding-left: 10px;
@@ -88,7 +86,7 @@
 
     .btn {
       text-align: center;
-      margin: 30px 0;
+      margin-top: 30px;
     }
 
     button {
@@ -106,11 +104,11 @@
     }
 
     .btnSubmit {
-      background-color: rgb(255, 135, 135);
+      background-color: rgb(231, 147, 74);
     }
 
     .btnReset {
-      background-color: rgb(216, 217, 207);
+      background-color: rgb(181, 182, 173);
     }
 
     .btn-temp{
@@ -125,18 +123,145 @@
       height: 25px;
       border: none;
       border-radius: 5px;
-      background-color: rgb(216, 217, 207);
+      background-color: rgb(181, 182, 173);
       color: white;
+    }
+
+    #beansImg{
+      position: absolute;
+      /* left: 5px; */
+      bottom: 5px;
     }
   </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <div class="header">
+      <div class="headinner">
+
+        <div class="logo">
+          <a href="mainpage.html" class="logo">
+            <img src="images/logo.jpg" alt="로고" width="15%">
+          </a>
+        </div>
+  
+        <div>
+          <ul class="nav">
+            <li class="nav_item">
+              <a href="login.html">멤버십 로그인</a>
+            </li>
+            <li class="nav_item">
+              <a href="join.html">멤버십 가입</a>
+            </li>
+            <li class="nav_item">
+              <a href="">고객센터</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <ul class="banner">
+            <li class="banner_item">
+              <a href="">Brand</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Menu</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Event</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Membership</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Store</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="ban_inner_con">
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">브랜드 스토리</a>
+            </li>
+            <li>
+              <a href="">회사 연혁</a>
+            </li>
+            <li>
+              <a href="">브랜드 소개</a>
+            </li>
+            <li>
+              <a href="">오시는 길</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">커피</a>
+            </li>
+            <li>
+              <a href="">라떼</a>
+            </li>
+            <li>
+              <a href="">에이드ㆍ주스</a>
+            </li>
+            <li>
+              <a href="">베이커리</a>
+            </li>
+            <li>
+              <a href="">MD상품</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">Notice</a>
+            </li>
+            <li>
+              <a href="">Event</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">Membership Card</a>
+            </li>
+            <li>
+              <a href="">Membership 혜택</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">매장 검색</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="headerscript.js"></script>
+
   <div class="container">
 
-    <p class="logo">JUDYº</p>
-    <h1>회원가입</h1>
-    <p class="welcome">회원이 되어 다양한 혜택을 경험해보세요!</p>
+    <h1>멤버십 가입</h1>
+    <p class="welcome">회원이 되어 다양한 혜택을 경험해보세요!
+      <img src="images/icon_coffeebeans.png" alt="플랫아이콘_커피콩" width="50px" height="50px" id="beansImg">
+    </p>
     <form>
       <p class="pfont">아이디<span class="star">*</span></p>
       <div class="btn-temp">
@@ -167,16 +292,19 @@
           <option value="korea">싱가포르 +65</option>
           <option value="korea">영국 +44</option>
         </select>
-        <input type="text" class="inputPhoneNum">
+        <input type="tel" class="inputPhoneNum"> -
+        <input type="tel" class="inputPhoneNum"> -
+        <input type="tel" class="inputPhoneNum">
         <button type="button" class="btnCheck">인증번호 발송</button>
       </div>
+      <!-- 여유있으면 인증번호란 만들기 -->
 
       <p class="pfont">이메일주소 입력</p>
       <input type="text" class="inputJoin" placeholder="이메일주소 입력(선택)">
       
-      <p class="essential"><span class="star">*</span>는 필수입력란입니다.</p>
+      <p class="essential"><span class="star">*</span>는 필수입력사항입니다.</p>
 
-      <p class="pfont">정보 제공 동의</p>
+      <p class="pfont">가입 약관 동의</p>
       <p class="agreeContent"><span style="font-weight: 600;">1. 개인정보 수집 목적 및 이용</span><br> 회원 가입의사 확인, 회원제 서비스 제공에 따른
         본인 식별·인증, 회원자격 유지·관리, 제한적 본인 확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리시 법정대리인의 동의여부 확인, 각종 고지·통지, 고충처리
         등의 목적으로 개인정보 수집 동의를 구하고 있습니다.<br><br><span style="font-weight: 600;">2. 개인정보 제3자 제공 동의</span><br>「정보통신망 이용촉진 및

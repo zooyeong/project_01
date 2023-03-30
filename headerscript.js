@@ -1,7 +1,6 @@
 let bannerEl = document.querySelectorAll('.banner_item');
 let banInnerEl = document.querySelector('.ban_inner_con');
 let banInA_El = document.querySelectorAll('.ban_inner li a');
-console.log(banInA_El);
 
 for(let i=0; i<bannerEl.length; i++){
   bannerEl[i].addEventListener('mouseover', function(){

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="headerstyle.css">
   <link rel="stylesheet" href="mainstyle.css">
 
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -24,11 +25,11 @@
       <div class="headinner">
 
         <div class="logo">
-          <a href="mainpage.html" class="logo">
+          <a href="mainpage.html">
             <img src="images/logo.jpg" alt="로고" width="200px">
           </a>
         </div>
-  
+
         <div>
           <ul class="nav">
             <li class="nav_item">
@@ -42,7 +43,7 @@
             </li>
           </ul>
         </div>
-  
+
         <div>
           <ul class="banner">
             <li class="banner_item">
@@ -135,18 +136,111 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="headerscript.js"></script>
 
     <div class="main">
-      <div class="main_content1">
-        <img src="images/image_mojito.jpg" alt="" width="100%">
+
+      <!-- <div class="main_slider1">
+        <div class="slide">
+          <img src="images/image_mojito.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/image_icecream.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/image_strawberry.jpg" alt="">
+        </div>
+      </div> -->
+      
+      <div class="main_fixed">
+        <div class="fixed_bar1"><a href="">가맹문의</a></div>
+        <div class="fixed_bar2"><a href="">채용공고</a></div>
+      </div>
+
+      <div id="wrapper">
+        <div id="slider-wrap">
+          <ul id="slider">
+            <li>
+              <div>
+                <!-- <h3>시원한 수박 모히또</h3>
+                <span>올여름도 시원하게!</span> -->
+              </div>
+              <img src="images/image_mojito.jpg">
+            </li>
+
+            <li>
+              <div>
+                <!-- <h3>주디의 매력, 아이스크림</h3>
+                <span>달달함에 빠지다</span> -->
+              </div>
+              <img src="images/image_icecream.jpg">
+            </li>
+
+            <li>
+              <div>
+                <!-- <h3>생딸기가 그대로!</h3>
+                <span>달콤한 딸기라떼</span> -->
+              </div>
+              <img src="images/image_strawberry.jpg">
+            </li>
+
+            <li>
+              <div>
+                <!-- <h3>시그니처, 오렌지</h3>
+                <span>극강의 상큼함을 담다</span> -->
+              </div>
+              <img src="images/image_orange.jpg">
+            </li>
+
+            <li>
+              <div>
+                <!-- <h3>달콤한 디저트</h3>
+                <span>퐁신한 시폰과 달콤한 크림이 베스트</span> -->
+              </div>
+              <img src="images/image_cake.jpg">
+            </li>
+
+
+          </ul>
+
+          <!-- controls -->
+          <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+          <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+          <!-- <div id="counter"></div> -->
+
+          <div id="pagination-wrap">
+            <ul>
+            </ul>
+          </div>
+          <!--controls-->
+        </div>
+      </div>
+
+      <div class="video_container">
+        <video autoplay loop muted>
+          <source src="medias/media_coffeebeans2.mp4" type="video/mp4">
+        </video>
+        <div class="video_font">
+          <h1>신선함을 담은 원두</h1>
+          <h3>주디의 시그니처, 케냐</h3>
+        </div>
       </div>
     </div>
 
-    <div class="main"></div>
+    <div class="main">
+
+    </div>
+    
+
+
+    <script src="mainscript.js"></script>
     <div class="footer"></div>
   </div>
+
 </body>
+
 </html>

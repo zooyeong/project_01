@@ -29,3 +29,10 @@ for(let i=0; i<banInA_El.length; i++){
     banInnerEl.style.height = "0px";
   })
 }
+
+banInnerEl.addEventListener('mouseover', function(){
+  banInnerEl.style.height = "200px";
+})
+banInnerEl.addEventListener('mouseout', function(){
+  banInnerEl.style.height = "0px";
+})

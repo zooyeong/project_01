@@ -35,6 +35,7 @@
 .main{
   position: absolute;
   width: 100%;
+  min-width: 1200px;
   top: 250px;
   z-index: 0;
 }
@@ -42,30 +43,35 @@
 .main2{
   position: absolute;
   width: 100%;
+  min-width: 1200px;
   top: 700px;
 }
 
 .main3{
   position: absolute;
   width: 100%;
+  min-width: 1200px;
   top: 1150px;
 }
 
 .main4{
   position: absolute;
   width: 100%;
+  min-width: 1200px;
   top: 1600px;
 }
 
 .main5{
   position: absolute;
   width: 100%;
+  min-width: 1200px;
   top: 1850px;
 }
 
 .footer{
   position: absolute;
   width: 100%;
+  min-width: 1200px;
   top: 2100px;
 }
 
@@ -136,7 +142,7 @@
 	line-height:57px;
 	text-align:center;
 	cursor:pointer;	
-	background:rgba(0,0,0,0.1);
+	/* background:rgba(0,0,0,0.1); */
 	z-index:100;
 	
 	
@@ -187,15 +193,13 @@
 #pagination-wrap ul li{
 	margin: 0 4px;
 	display: inline-block;
-	width:5px;
-	height:5px;
+	width:7px;
+	height:7px;
 	border-radius:50%;
 	background:#fff;
 	opacity:0.5;
 	position:relative;
   top:0;
-  
-  
 }
 
 #pagination-wrap ul li.active{
@@ -294,8 +298,14 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
   background-color: rgba(163, 211, 66, 0.7);
 }
 
-.main2 h1, .main3 h1, .main2 h2, .main3 h2{
-  color: white;
+.main2 h1, .main2 h2{
+  color: bisque;
+  font-family: inherit;
+  text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
+}
+
+.main3 h1, .main3 h2{
+  color: rgb(237, 245, 221);
   font-family: inherit;
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
 }
@@ -442,6 +452,13 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
   line-height: 140px;
   border-radius: 5px;
 }
+
+.card div img{
+  opacity: 0.3;
+  bottom: 30px;
+  right: 80px;
+}
+
 
 .card div p{
   color: white;

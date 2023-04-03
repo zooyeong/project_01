@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="headerstyle.css">
+  <link rel="stylesheet" href="joinstyle.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1{
+      font-size: 3rem;
+      font-family: 'GangwonEduPowerExtraBoldA';
+      margin-top: 20px;
+    }
+    
+    .join {
+      font-size: 5rem;
+      font-family: 'GangwonEduPowerExtraBoldA';
+      color: rgb(231, 147, 74);
+      text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
+      margin-top: 50px;
+    }
+    
+    form {
+      border: 1px solid rgb(216, 217, 207);
+      padding: 50px 50px;
+      margin: 0 auto;
+      width: 600px;
+      border-radius: 10px;
+    }
+
+    .inputJoin {
+      width: 100%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid lightgray;
+    }
+
+    .star {
+      color: red;
+    }
+
+    #nation{
+      width: 25%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid lightgray;
+      color: gray;
+    }
+
+    .inputPhoneNum{
+      width: 13%;
+      height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+      border: 1px solid lightgray;
+      color: gray;
+    }
+
+    .essential{
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    .agreeContent {
+      border: 1px solid lightgray;
+      padding: 10px 10px;
+      margin: 10px 0;
+      font-size: 0.8rem;
+      height: 120px;
+      overflow: scroll;
+    }
+
+    .agreeCheck {
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+
+    .btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: medium;
+    }
+
+    .pfont {
+      font-weight: 600;
+    }
+
+    .btnSubmit {
+      background-color: rgb(231, 147, 74);
+    }
+
+    .btnReset {
+      background-color: rgb(181, 182, 173);
+    }
+
+    .btn-temp{
+      position: relative;
+    }
+
+    .btnCheck{
+      position: absolute;
+      top: 13px;
+      right: 5px;
+      width: 25%;
+      height: 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(181, 182, 173);
+      color: white;
+    }
+
+    .footer{
+      top: 1400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="headinner">
+
+        <div class="logo">
+          <a href="mainpage.html">
+            <img src="images/logo.jpg" alt="로고" width="200px">
+          </a>
+        </div>
+  
+        <div>
+          <ul class="nav">
+            <li class="nav_item">
+              <a href="login.html">멤버십 로그인</a>
+            </li>
+            <li class="nav_item">
+              <a href="join.html">멤버십 가입</a>
+            </li>
+            <li class="nav_item">
+              <a href="">고객센터</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <ul class="banner">
+            <li class="banner_item">
+              <a href="">Brand</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Menu</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Event</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Membership</a>
+            </li>
+            <li class="banner_item">
+              <a href="">Store</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="ban_inner_con">
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">브랜드 스토리</a>
+            </li>
+            <li>
+              <a href="">회사 연혁</a>
+            </li>
+            <li>
+              <a href="">브랜드 소개</a>
+            </li>
+            <li>
+              <a href="">오시는 길</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">커피</a>
+            </li>
+            <li>
+              <a href="">라떼</a>
+            </li>
+            <li>
+              <a href="">에이드ㆍ주스</a>
+            </li>
+            <li>
+              <a href="">베이커리</a>
+            </li>
+            <li>
+              <a href="">MD상품</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">Notice</a>
+            </li>
+            <li>
+              <a href="">Event</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">Membership Card</a>
+            </li>
+            <li>
+              <a href="">Membership 혜택</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="ban_inner">
+            <li>
+              <a href="">매장 검색</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="headerscript.js"></script>
+
+  <div class="container">
+
+    <div class="align">
+      <ul>
+        <li><a href="" style="color: rgb(231, 147, 74);">멤버십 가입</a></li>
+      </ul>
+
+      <div class="align_2">
+        <a href="">Membership</a>
+        <p>주디커피의 가족이 되어<br>다양한 혜택을 즐겨보세요.</p>
+      </div>
+
+      <img src="images/image_ad.jpg" width="100%" height="200px">
+    </div>
+
+    <div class="content">
+
+      <p class="step">Home > 멤버십 가입</p>
+      <h1>멤버십 가입</h1>
+      <p class="join">JOIN JODY</p>
+      <form>
+        <p class="pfont">아이디<span class="star">*</span></p>
+        <div class="btn-temp">
+          <input type="text" class="inputJoin" placeholder="아이디 입력(6~10자)">
+          <button type="button" class="btnCheck">중복확인</button>
+        </div>
+  
+        <p class="pfont">비밀번호<span class="star">*</span></p>
+        <input type="password" class="inputJoin" placeholder="비밀번호 입력(특수문자 포함 8~20자)">
+  
+        <p class="pfont">비밀번호 확인<span class="star">*</span></p>
+        <input type="password" class="inputJoin" placeholder="비밀번호 재입력">
+  
+        <p class="pfont">이름<span class="star">*</span></p>
+        <input type="text" class="inputJoin" placeholder="이름 입력">
+  
+        <p class="pfont">휴대폰번호 입력<span class="star">*</span></p>
+        <div class="btn-temp">
+          <select name="nation" id="nation">
+            <option value="korea">대한민국 +82</option>
+            <option value="korea">가나 +233</option>
+            <option value="korea">네덜란드 +31</option>
+            <option value="korea">라오스 +856</option>
+            <option value="korea">멕시코 +52</option>
+            <option value="korea">미국/캐나다 +1</option>
+            <option value="korea">브라질 +55</option>
+            <option value="korea">수리남 +597</option>
+            <option value="korea">싱가포르 +65</option>
+            <option value="korea">영국 +44</option>
+          </select>
+          <input type="tel" class="inputPhoneNum"> -
+          <input type="tel" class="inputPhoneNum"> -
+          <input type="tel" class="inputPhoneNum">
+          <button type="button" class="btnCheck">인증번호 발송</button>
+        </div>
+        <!-- 여유있으면 인증번호란 만들기 -->
+  
+        <p class="pfont">이메일주소 입력</p>
+        <input type="text" class="inputJoin" placeholder="이메일주소 입력(선택)">
+        
+        <p class="essential"><span class="star">*</span>는 필수입력사항입니다.</p>
+  
+        <p class="pfont">가입 약관 동의</p>
+        <p class="agreeContent"><span style="font-weight: 600;">1. 개인정보 수집 목적 및 이용</span><br> 회원 가입의사 확인, 회원제 서비스 제공에 따른
+          본인 식별·인증, 회원자격 유지·관리, 제한적 본인 확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리시 법정대리인의 동의여부 확인, 각종 고지·통지, 고충처리
+          등의 목적으로 개인정보 수집 동의를 구하고 있습니다.<br><br><span style="font-weight: 600;">2. 개인정보 제3자 제공 동의</span><br>「정보통신망 이용촉진 및
+          정보보호 등에 관한 법률」은 요금정산을 위해 필요한 경우나 다른 법률에 특별한 규정이 있는 경우를 제외하고 정보통신서비스제공자가 개인정보를 제3자에게 제공한다는 사실을 이용자에게 미리 알리고 동의를
+          받은 경우에만 그 개인정보를 제3자에게 제공할 수 있도록 하고 있습니다. 또한, 정보통신서비스제공자나 그로부터 이용자의 개인정보를 제공받은 사람이 이용자의 개인정보 수집ㆍ보관ㆍ처리 등의 업무를
+          제3자에게 위탁하려는 경우에도 이용자에게 알리고 동의를 받도록 하고 있습니다.</p>
+        <span>동의<input type="checkbox" class="agreeCheck"></span>
+        <span>비동의<input type="checkbox" class="agreeCheck"></span><br>
+  
+        <div class="btn">
+          <button type="submit" class="btnSubmit">가입하기</button>
+          <button type="reset" class="btnReset">가입취소</button>
+        </div>
+  
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <ul>
+      <li><a href="">개인정보처리방침 | </a></li>
+      <li><a href="">서비스이용약관 | </a></li>
+      <li><a href="">멤버십이용약관 | </a></li>
+      <li><a href="">주디카드이용약관 | </a></li>
+      <li><a href="">고객문의 | </a></li>
+      <li><a href="">고객설문 | </a></li>
+      <li><a href="">사이트맵 | </a></li>
+      <li><a href="">BI 소개</a></li>
+    </ul>
+    <p>법인명 : (주)주디주식회사 대표자 : 박주영 사업자등록번호 : 961-11-59611 고객센터 : 1544-9611</p>
+    <p>주소 : 충청남도 천안시 동남구 대흥로 215 대표전화 : 1544-9611 가맹문의 : 1544-1196</p>
+    <p>COPYRIGHTⓒ 2015 JUDY F&B ALL RIGHTS RESERVED</p>
+  </div>
+</body>
+
+</html>

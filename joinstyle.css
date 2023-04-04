@@ -31,7 +31,7 @@
 .align_2 > a {
   font-size: 1.3rem;
   font-family: 'KIMM_Bold';
-
+  color: black;
 }
 
 .content {
@@ -55,6 +55,10 @@ h1{
   color: rgb(231, 147, 74);
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
   margin-top: 50px;
+}
+
+.join_start a{
+  color: black;
 }
 
 .footer{

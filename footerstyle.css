@@ -1,0 +1,30 @@
+.footer{
+  position: relative;
+  width: 100%;
+  min-width: 1070px;
+  /* top: 2100px; */
+  height: 150px;
+  background-color: rgb(231, 147, 74);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer li{
+  display: inline-flex;
+}
+
+.footer li a, .footer p{
+  color: white;
+}
+
+.footer a{
+  font-size: small;
+}
+
+.footer p{
+  font-size: small;
+}

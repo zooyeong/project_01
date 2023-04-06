@@ -1,0 +1,206 @@
+.container {
+  width: 100%;
+  min-width: 1200px;
+  position: relative;
+  /* top: 280px;  */
+  z-index: 0;
+  margin-top: 50px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.step {
+  color: rgb(131, 122, 117);
+}
+
+h1{
+  font-size: 3rem;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin-top: 20px;
+}
+
+/* .content li{
+  margin-top: 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+} */
+
+/* .content img{
+  width: 45px;
+}
+
+.content span{
+  margin-left: 20px;
+} */
+
+.join {
+  font-size: 5rem;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: rgb(231, 147, 74);
+  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+  margin-top: 50px;
+}
+
+form {
+  border: 1px solid rgb(216, 217, 207);
+  /* background-color: lightgoldenrodyellow; */
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 0px;
+  padding: 50px 50px;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.inputJoin {
+  width: 100%;
+  height: 30px;
+  /* margin: 10px 0; */
+  padding-left: 10px;
+  border: 1px solid lightgray;
+}
+.btn-temp>.inputJoin {
+  width: 74%;
+}
+.star {
+  color: red;
+}
+
+input[type="radio"]{
+  margin-right: 10px;
+  appearance: none;
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  /* transition: border 0.5s ease-in-out; */
+}
+
+input[type="radio"]:checked{
+  border: 0.4em solid rgb(231, 147, 74);
+}
+
+input[type="radio"]:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+  cursor: pointer;
+}
+
+input[type="radio"] + span{
+  font-size: 0.9rem;
+}
+
+.yymmdd, #month, .inputPhoneNum{
+  width: 15%;
+  height: 30px;
+  /* margin: 10px 0; */
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  color: gray;
+}
+#nation {
+  width: 25%;
+  height: 30px;
+  /* margin: 10px 0; */
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  color: gray;
+}
+.inputPhoneNum {
+  width: 13%;
+}
+.essential {
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+/* .agreeContent {
+  border: 1px solid lightgray;
+  padding: 10px 10px;
+  margin: 10px 0;
+  font-size: 0.8rem;
+  height: 120px;
+  overflow: scroll;
+}
+.agreeCheck {
+  margin-left: 5px;
+  margin-right: 10px;
+} */
+.btn {
+  text-align: center;
+  margin-top: 30px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: medium;
+}
+.pfont {
+  font-weight: 600;
+  margin: 10px 0;
+}
+button {
+  cursor: pointer;
+}
+
+.btnSubmit {
+  background-color: rgb(231, 147, 74);
+}
+.btnReset {
+  background-color: black;
+}
+.btn-temp {
+  position: relative;
+}
+.btnCheck {
+  position: absolute;
+  /* top: 10px; */
+  right: 1px;
+  width: 25%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+.vertif {
+  overflow: hidden;
+  height: 0;
+  transition-property: all;
+  transition-duration: 0.7s;
+  position: relative;
+  /* padding: 30px 0; */
+  margin: 10px 0;
+}
+.pfont_alert {
+  color: red;
+  font-size: small;
+  margin-bottom: 10px;
+}
+.verfif_input {
+  margin: 10px 0;
+  width: 50%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+#timer {
+  position: absolute;
+  top: 55px;
+  left: 35%;
+  color: red;
+  font-size: small;
+}
+.verChk {
+  width: 25%;
+  height: 30px;
+  /* background-color: rgb(156, 130, 114); */
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}

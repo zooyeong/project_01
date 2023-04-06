@@ -7,180 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="headerstyle.css">
-  <link rel="stylesheet" href="joinstyle.css">
+  <link rel="stylesheet" href="join_in.css">
   <link rel="stylesheet" href="footerstyle.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    h1{
-      font-size: 3rem;
-      font-family: 'GangwonEduPowerExtraBoldA';
-      margin-top: 20px;
-    }
-    
-    .join {
-      font-size: 5rem;
-      font-family: 'GangwonEduPowerExtraBoldA';
-      color: rgb(231, 147, 74);
-      text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
-      margin-top: 50px;
-    }
-    
-    form {
-      border: 1px solid rgb(216, 217, 207);
-      /* background-color: lightgoldenrodyellow; */
-      box-shadow: rgba(0,0,0,0.1) 4px 4px 0px;
-      padding: 50px 50px;
-      margin: 0 auto;
-      width: 600px;
-      border-radius: 10px;
-    }
-
-    .inputJoin {
-      width: 100%;
-      height: 30px;
-      margin: 10px 0;
-      padding-left: 10px;
-      border: 1px solid lightgray;
-    }
-
-    .btn-temp > .inputJoin{
-      width: 74%;
-    }
-    
-
-    .star {
-      color: red;
-    }
-
-    #nation{
-      width: 25%;
-      height: 30px;
-      margin: 10px 0;
-      padding-left: 10px;
-      border: 1px solid lightgray;
-      color: gray;
-    }
-
-    .inputPhoneNum{
-      width: 13%;
-      height: 30px;
-      margin: 10px 0;
-      padding-left: 10px;
-      border: 1px solid lightgray;
-      color: gray;
-    }
-
-    .essential{
-      font-size: 0.8rem;
-      margin: 10px 0;
-    }
-
-    .agreeContent {
-      border: 1px solid lightgray;
-      padding: 10px 10px;
-      margin: 10px 0;
-      font-size: 0.8rem;
-      height: 120px;
-      overflow: scroll;
-    }
-
-    .agreeCheck {
-      margin-left: 5px;
-      margin-right: 10px;
-    }
-
-    .btn {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    button {
-      width: 100px;
-      height: 40px;
-      color: white;
-      border: 0;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: medium;
-    }
-
-    .pfont {
-      font-weight: 600;
-    }
-
-    button{
-      cursor: pointer;
-    }
-    .btnSubmit {
-      background-color: rgb(231, 147, 74);
-    }
-
-    .btnReset {
-      background-color: black;
-    }
-
-    .btn-temp{
-      position: relative;
-    }
-
-    .btnCheck{
-      position: absolute;
-      top: 10px;
-      right: 1px;
-      width: 25%;
-      height: 30px;
-      border: none;
-      border-radius: 5px;
-      background-color: black;
-      color: white;
-    }
-
-    .vertif{
-      overflow: hidden;
-      height: 0;
-      transition-property: all;
-      transition-duration: 0.7s;
-      position: relative;
-      /* padding: 30px 0; */
-      margin: 10px 0;
-    }
-
-    .pfont_alert{
-      color: red;
-      font-size: small;
-      margin-bottom: 10px;
-    }
-
-    .verfif_input{
-      margin: 10px 0;
-      width: 50%;
-      height: 30px;
-      border: none;
-      border-bottom: 1px solid lightgray;
-    }
-
-    #timer{
-      position: absolute;
-      top: 35px;
-      left: 39%;
-      color: red;
-      font-size: small;
-    }
-
-    .verChk{
-      width: 25%;
-      height: 30px;
-      /* background-color: rgb(156, 130, 114); */
-      color: black;
-      background-color: white;
-      border: 2px solid black;
-    }
-  </style>
 </head>
 
 <body>
@@ -306,19 +134,6 @@
 
   <div class="container">
 
-    <div class="align">
-      <ul>
-        <li><a href="" style="color: rgb(231, 147, 74);">멤버십 가입</a></li>
-      </ul>
-
-      <div class="align_2">
-        <a href="">Membership</a>
-        <p>주디커피의 가족이 되어<br>다양한 혜택을 즐겨보세요.</p>
-      </div>
-
-      <img src="images/image_ad.jpg" width="100%" height="200px">
-    </div>
-
     <div class="content">
 
       <p class="step">Home > 멤버십 가입</p>
@@ -339,6 +154,29 @@
   
         <p class="pfont">이름<span class="star">*</span></p>
         <input type="text" class="inputJoin" placeholder="이름 입력">
+
+        <p class="pfont">성별<span class="star">*</span></p>
+        <input type="radio" name="gender"><span>남자</span>
+        <input type="radio" name="gender"><span>여자</span>
+
+        <p class="pfont">생년월일<span class="star">*</span></p>
+        <input type="text" placeholder="년" class="yymmdd">
+        <select name="month" id="month">
+          <option value="mon">월</option>
+          <option value="jan">1월</option>
+          <option value="feb">2월</option>
+          <option value="mar">3월</option>
+          <option value="api">4월</option>
+          <option value="may">5월</option>
+          <option value="jun">6월</option>
+          <option value="jul">7월</option>
+          <option value="aug">8월</option>
+          <option value="sep">9월</option>
+          <option value="oct">10월</option>
+          <option value="nov">11월</option>
+          <option value="dec">12월</option>
+        </select>
+        <input type="text" placeholder="일" class="yymmdd">
   
         <p class="pfont">휴대폰번호 입력<span class="star">*</span></p>
         <div class="btn-temp">
@@ -370,16 +208,9 @@
   
         <p class="pfont">이메일주소 입력</p>
         <input type="text" class="inputJoin" placeholder="이메일주소 입력(선택)">
-  
-        <p class="pfont">가입 약관 동의<span class="star">*</span></p>
-        <p class="agreeContent"><span style="font-weight: 600;">1. 개인정보 수집 목적 및 이용</span><br> 회원 가입의사 확인, 회원제 서비스 제공에 따른
-          본인 식별·인증, 회원자격 유지·관리, 제한적 본인 확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리시 법정대리인의 동의여부 확인, 각종 고지·통지, 고충처리
-          등의 목적으로 개인정보 수집 동의를 구하고 있습니다.<br><br><span style="font-weight: 600;">2. 개인정보 제3자 제공 동의</span><br>「정보통신망 이용촉진 및
-          정보보호 등에 관한 법률」은 요금정산을 위해 필요한 경우나 다른 법률에 특별한 규정이 있는 경우를 제외하고 정보통신서비스제공자가 개인정보를 제3자에게 제공한다는 사실을 이용자에게 미리 알리고 동의를
-          받은 경우에만 그 개인정보를 제3자에게 제공할 수 있도록 하고 있습니다. 또한, 정보통신서비스제공자나 그로부터 이용자의 개인정보를 제공받은 사람이 이용자의 개인정보 수집ㆍ보관ㆍ처리 등의 업무를
-          제3자에게 위탁하려는 경우에도 이용자에게 알리고 동의를 받도록 하고 있습니다.</p>
-        <span>동의<input type="checkbox" class="agreeCheck"></span>
-        <span>비동의<input type="checkbox" class="agreeCheck"></span><br>
+        
+        <p class="pfont">닉네임 입력</p>
+        <input type="text" class="inputJoin" placeholder="닉네임 입력(선택)">
 
         <p class="essential"><span class="star">*</span>는 필수입력사항입니다.</p>
   
@@ -414,7 +245,6 @@
             confirmButtonColor: 'rgb(231, 147, 74)'
             // closeOnClickOutside: true
           }).then(function(result){
-            console.log(result.isConfirmed);
             if(!result.isConfirmed){
               // elPw.focus();
               tempId.value = '';
@@ -457,7 +287,7 @@
       }
 
       btnNumberChk.addEventListener('click', function(){
-        el_vertif.style.height = '100px';
+        el_vertif.style.height = '120px';
         var AuthTimer = new $ComTimer();
         AuthTimer.comSecond = 180;
         AuthTimer.timer = setInterval(function(){AuthTimer.fnTimer()},1000);

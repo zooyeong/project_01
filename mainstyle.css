@@ -314,7 +314,7 @@
   width: 39%;
   height: 200px;
   position: relative;
-  background-image: url('images/image_cardBackground.jpg');
+  background-image: url('images/image_giftcard_flame.jpg');
   background-size: 100%;
   padding: 10px;
 }
@@ -369,32 +369,63 @@
 /* SNS */
 .main5{
   position: relative;
-  width: 100%;
+  width: 95%;
+  max-width: 1280px;
   min-width: 1070px;
   text-align: center;
   font-family: 'TAEBAEKmilkyway';
+  margin: 0 auto;
 }
 
 .sns_wrapper{
   margin: 0 auto;
-  width: 95%;
+  width: 50%;
   height: 200px;
-  border-bottom: 1px solid darkgray;
+  /* border-bottom: 1px solid darkgray; */
+  float: left;
 }
 
 .main5 h2{
   color: black;
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
+  margin: 15px 0;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
 }
 
 .main5 h4{
   color: darkgray;
-  margin: 15px 0;
 }
 
 .main5 img{
   float: center;
   margin-right: 10px;
+}
+
+.event_wrapper{
+  float: left;
+  width: 50%;
+}
+
+.event_wrapper > p{
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.event_wrapper a{
+  color: black;
+}
+.event_wrapper > p > a:hover{
+  color: darkgray;
+  text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
+}
+
+.event_wrapper > p > span.event_mmdd{
+  position: absolute;
+  right: 0;
 }
 
 

@@ -18,14 +18,14 @@ for(let i=0; i<bannerEl.length; i++){
 
 for(let i=0; i<banInA_El.length; i++){
   banInA_El[i].addEventListener('mouseover', function(){
-    banInA_El[i].style.color = "white";
+    // banInA_El[i].style.color = "white";
     banInnerEl.style.height = "200px";
   })
 }
 
 for(let i=0; i<banInA_El.length; i++){
   banInA_El[i].addEventListener('mouseout', function(){
-    banInA_El[i].style.color = "rgb(150,150,150)";
+    // banInA_El[i].style.color = "rgb(150,150,150)";
     banInnerEl.style.height = "0px";
   })
 }

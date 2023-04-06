@@ -23,7 +23,6 @@
   justify-content: center;
   width: 100%;
   min-width: 1200px;
-  position: relative;
   /* background-color: rgb(233, 186, 144); */
 }
 
@@ -63,12 +62,17 @@
 
 .model{
   margin-left: 100px;
+  margin-right: 50px;
+}
+
+figure{
+  position: relative;
 }
 
 figure figcaption{
   position: absolute;
-  bottom: 100px;
-  left: 670px;
+  bottom: 50px;
+  left: 350px;
   font-size: small;
   color: darkgray;
   z-index: 100;
@@ -77,11 +81,22 @@ figure figcaption{
 /* .map_container > div:nth-of-type(2){
   position: relative;
 } */
-
-.map_container > img:nth-of-type(2){
+.map_wrapper{
+  width: 450px;
+  height: 470px;
+  position: relative;
+}
+.map_before{
   position: absolute;
-  left: 56.8%;
-  bottom: 4px;
+  top: 0;
+  left: 0;
+  /* left: 56.1%; */
+}
+.map_after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* bottom: 4px; */
   /* top: 5px; */
 }
 

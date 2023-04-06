@@ -1,10 +1,10 @@
 .container {
-  width: 100%;
+  width: 1200px;
   min-width: 1200px;
   position: relative;
   /* top: 280px;  */
   z-index: 0;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
 .container::after {

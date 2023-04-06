@@ -234,7 +234,7 @@
 /* FRANCHISE, STORE, GIFT CARD */
 .main4{
   position: relative;
-  width: 100%;
+  width: 1200px;
   max-width: 1280px;
   min-width: 1070px;
   margin: 50px auto;
@@ -242,7 +242,7 @@
 
 .info_wrapper{
   margin: 0 auto;
-  width: 95%;
+  width: 1070px;
   height: 200px;
 }
 
@@ -254,28 +254,28 @@
 
 .franchise{
   float: left;
-  width:30%;
+  width: 350px;
   height: 200px;
   border: 3px solid rgb(231, 147, 74);
   padding-left: 10px;
-  margin-right: 5px;
   position: relative;
 }
 
 .franchise img{
   position: absolute;
   right: 20px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .search{
   float: left;
   position: relative;
-  width:30%;
+  width: 350px;
   height: 200px;
   border: 3px solid rgb(231, 147, 74);
   padding-left: 10px;
   position: relative;
+  margin: 0 10px;
 }
 
 .franchise h1, .search h1{
@@ -306,28 +306,22 @@
 }
 
 .franchise h4, .search h4{
-  color: rgb(117, 116, 116);
+  color: black;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 1.1rem;
+  margin-top: 7px;
 }
 
 .card{
-  float:right;
-  width: 39%;
+  float:left;
+  width: 350px;
   height: 200px;
   position: relative;
   background-image: url('images/image_giftcard_flame.jpg');
   background-size: 100%;
   padding: 10px;
-}
-
-.card img{
-  position: absolute;
-}
-
-.card > p{
-  color: rgb(231, 147, 74);
-  font-family: inherit;
-  font-weight: 700;
-  margin-top: 8%;
+  border-radius: 9px;
+  text-align: right;
 }
 
 .card h2, .card h4{
@@ -336,34 +330,12 @@
 }
 
 .card h2{
-  margin: 10px 0;
+  margin-top: 10px;
+  text-align: left;
 }
 
-.card div{
-  position: absolute;
-  width: 250px;
-  height: 140px;
-  background-color: rgba(231, 147, 74, 0.7);
-  /* opacity: 0.5; */
-  top: 14%;
-  right: 10px;
-  font-size: 32px;
-  text-align: center;
-  line-height: 140px;
-  border-radius: 5px;
-}
-
-.card div img{
-  opacity: 0.3;
-  bottom: 30px;
-  right: 80px;
-}
-
-.card div p{
-  color: white;
-  text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
-  font-family: inherit;
-  font-weight: 700;
+.card h4{
+  margin-top: 100px;
 }
 
 /* SNS */

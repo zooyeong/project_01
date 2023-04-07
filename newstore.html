@@ -12,153 +12,26 @@
   <link rel="stylesheet" href="newstore.css">
   <link rel="stylesheet" href="footerstyle.css">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .footer{
-      margin-top: 0;
-    }
-  </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="header">
-      <div class="headinner">
+    <div id="import_header"></div>
 
-        <div class="logo">
-          <a href="mainpage.html">
-            <img src="images/logo.jpg" alt="로고" width="200px">
-          </a>
-        </div>
-
-        <div>
-          <ul class="nav">
-            <li class="nav_item">
-              <a href="login.html">멤버십 로그인</a>
-            </li>
-            <li class="nav_item">
-              <a href="join.html">멤버십 가입</a>
-            </li>
-            <li class="nav_item">
-              <a href="">고객센터</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="banner">
-            <li class="banner_item">
-              <a href="">Brand</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Menu</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Event</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Membership</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Store</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="ban_inner_con">
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">브랜드 스토리</a>
-            </li>
-            <li>
-              <a href="">회사 연혁</a>
-            </li>
-            <li>
-              <a href="">브랜드 소개</a>
-            </li>
-            <li>
-              <a href="">오시는 길</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">커피</a>
-            </li>
-            <li>
-              <a href="">라떼</a>
-            </li>
-            <li>
-              <a href="">에이드ㆍ주스</a>
-            </li>
-            <li>
-              <a href="">베이커리</a>
-            </li>
-            <li>
-              <a href="">MD상품</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">Notice</a>
-            </li>
-            <li>
-              <a href="">Event</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">Membership Card</a>
-            </li>
-            <li>
-              <a href="">Membership 혜택</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">매장 검색</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="main_fixed">
-        <div class="f_b_style f_bar1"><a href="newstore.html">가맹문의</a></div>
-        <div class="f_b_style f_bar2"><a href="">채용공고</a></div>
-      </div>
+    <div class="main_fixed">
+      <div class="f_b_style f_bar1"><a href="newstore.html">창업설명회</a></div>
+      <div class="f_b_style f_bar2"><a href="">가맹문의</a></div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="headerscript.js"></script>
 
     <div class="main_ns">
       <div class="store_wrap">
         <div id="harf_circle">
-          <img src="images/icon_coffee-bean.png" alt="" width="50px">
+          <img src="images/icon_coffee-bean.png" alt="" width="70px">
           <h1>FRANCHISE JUDY</h1>
           <h3>주디커피의 분위기로 따뜻한 매장을 운영하세요.</h3>
+          <a href="">
+            <p>자세히보기</p>
+          </a>
         </div>
         <img src="images/image_coffee_cafe.jpg" alt="" id="img_cafe">
         <img src="images/image_cappuccino.jpg" alt="" id="img_cappuccino">
@@ -166,63 +39,6 @@
         <img src="images/image_coffeeshop.jpg" alt="" id="img_cfshop">
         <div id="harf_line"></div>
       </div>
-      <!-- <h1 class="headline">폭발적인 가맹 오픈 현황!</h1>
-
-      <div class="map_container">
-        
-        <div class="store_list animatable">
-          <img src="images/icon_open.png" alt="">
-          <ul>
-            <li>
-              <h3>신규 오픈 가맹점</h3>
-            </li>
-          </ul>
-          <ul>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 강릉 대학로점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 강원 강원횡성점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 대구 동성로점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 대구 카톨릭병원점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 경북 경산 IC점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 부산 부산역점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 부산 해운대점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 천안 천안신부점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 천안 불당점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 인천 인천터미널역점</li>
-            <li><img src="images/icon_locate.png" alt="" width="20px"> 서울 잠실새내역점</li>
-          </ul>
-          <ul>
-            <li>
-              <h4>*2023년 4월 기준</h4>
-            </li>
-          </ul>
-        </div>
-
-        <figure>
-          <img src="images/image_model.png" alt="" width="270px" class="model animatable">
-          <figcaption>주디커피<br> 전속모델<br>디주님</figcaption>
-        </figure>
-        <div class="map_wrapper">
-          <img src="images/image_map_beansnone.png" alt="" width="430px" class="map_before">
-          <img src="images/image_map_beans.png" alt="" class="map_after c_b_t" width="430px">
-        </div> -->
-
-        
-        <!-- <div>
-
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-          <img src="images/icon_coffeebeans.png" alt="" class="coffeebeans c_b_t" width="50px">
-
-        </div> -->
-
-      <!-- </div> -->
 
       <div class="inquiry_wrap">
         <h1>주디카페 창업혜택</h1>
@@ -230,19 +46,24 @@
           <li>
             <h1>1</h1>
             <h2>가맹비<br>700만 원<br>
-            <span>면제</span></h2>
+              <span>면제</span>
+            </h2>
           </li>
-          <li>
+          <li id="benefit_in_2">
             <h1>2</h1>
             <h2>배달앱<br>B2B 계약<br><span>수수료할인</span></h2>
           </li>
           <li>
             <h1>3</h1>
-            <h2>인테리어<br><span>NO 마진</span><br><p>직접 시공 가능</p></h2>
+            <h2>인테리어<br><span>NO 마진</span><br>
+              <p>직접 시공 가능</p>
+            </h2>
           </li>
           <li>
             <h1>4</h1>
-            <h2>업종전환,<br><span>브랜드 변경</span><br><p>부분 리모델링 가능</p></h2>
+            <h2>업종전환,<br><span>브랜드 변경</span><br>
+              <p>부분 리모델링 가능</p>
+            </h2>
           </li>
           <li>
             <h1>5</h1>
@@ -265,59 +86,50 @@
           <p><span>+본사 판단 예상 매출이 높은 점포, 15평 이상 혹은 월세 5백만 원 이상의 점포<br>1천만 원 상당 에스프레소 머신도 지원!</span></p>
         </div>
       </div>
-<!-- 
-      <div class="inquiry_wrap">
-        <img src="images/image_businessPoint.jpg" alt="">
-        <p>👇🏻click!</p>
-        <a href="">
-          <h1>가맹 상담 신청하기</h1>
-          <div class="inquiry"></div>
-        </a>
-      </div> -->
+
     </div>
+  </div>
+  <div id="import_footer"></div>
 
-    <script>
-      $(document).ready(function(){
-        $('.store_list').attr('class', 'store_list animated')
-        $('.model').attr('class', 'model animated')
-        $(window).scroll(function(){
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-          if(scrollY >= 400){
-            $('.benefit').attr('class', 'benefit animated');
-          } else{
-            $('.benefit').attr('class', 'benefit animatable');
-          }
+  <script>
+    $(document).ready(function () {
 
-          if(scrollY >= 600){
-            $('.promotion').attr('class', 'promotion animated');
-            $('.promotion').delay(3);
-          } else{
-            $('.promotion').attr('class', 'promotion animatable');
-          }
-        });
+      $('#import_header').load("header.html");
+      $('#import_footer').load("footer.html")
 
+
+      $('#img_cafe').attr('class', 'animatedY');
+      $('#img_cappuccino').attr('class', 'animatedY animated_delay2');
+      $('#img_cf_machine').attr('class', 'animatedY animated_delay3');
+      $('#img_cfshop').attr('class', 'animatedY animated_delay4');
+
+      $('#harf_circle > img').attr('class', 'animatedX');
+      $('#harf_circle > h1').attr('class', 'animatedX animated_delay2');
+      $('#harf_circle > h3').attr('class', 'animatedX animated_delay3');
+      $('#harf_circle > a').attr('class', 'animatedX animated_delay4');
+
+      $(window).scroll(function () {
+
+        if (scrollY >= 400) {
+          $('.benefit').attr('class', 'benefit animatedY');
+        } else {
+          $('.benefit').attr('class', 'benefit animatable');
+        }
+
+        if (scrollY >= 600) {
+          $('.promotion').attr('class', 'promotion animatedY');
+          $('.promotion').delay(3);
+        } else {
+          $('.promotion').attr('class', 'promotion animatable');
+        }
       });
+    });
 
-    </script>
-
-    <div class="footer">
-      <ul>
-        <li><a href="">개인정보처리방침 | </a></li>
-        <li><a href="">서비스이용약관 | </a></li>
-        <li><a href="">멤버십이용약관 | </a></li>
-        <li><a href="">주디카드이용약관 | </a></li>
-        <li><a href="">고객문의 | </a></li>
-        <li><a href="">고객설문 | </a></li>
-        <li><a href="">사이트맵 | </a></li>
-        <li><a href="">BI 소개</a></li>
-      </ul>
-      <p>법인명 : (주)주디주식회사 대표자 : 박주영 사업자등록번호 : 961-11-59611 고객센터 : 1544-9611</p>
-      <p>주소 : 충청남도 천안시 동남구 대흥로 215 대표전화 : 1544-9611 가맹문의 : 1544-1196</p>
-      <p>COPYRIGHTⓒ 2015 JUDY F&B ALL RIGHTS RESERVED</p>
-    </div>
-
-  
-  <script src="mainscript.js"></script>
+  </script>
 </body>
 
 </html>

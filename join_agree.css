@@ -40,6 +40,10 @@ section > h4{
   margin: 30px 0;
 }
 
+section:last-of-type > h4{
+  margin-bottom: 10px;
+}
+
 section > p{
   padding: 0 20px;
 }
@@ -73,7 +77,7 @@ input[type="checkbox"]:checked {
   color: white;
 }
 
-.agree_content > p{
+.agree_content > p, section:last-of-type > p{
   font-size: small;
 }
 

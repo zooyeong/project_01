@@ -13,124 +13,7 @@
 
 <body>
   <div class="wrap">
-    <div class="header">
-      <div class="headinner">
-
-        <div class="logo">
-          <a href="mainpage.html">
-            <img src="images/logo.jpg" alt="로고" width="200px">
-          </a>
-        </div>
-  
-        <div>
-          <ul class="nav">
-            <li class="nav_item">
-              <a href="login.html">멤버십 로그인</a>
-            </li>
-            <li class="nav_item">
-              <a href="join.html">멤버십 가입</a>
-            </li>
-            <li class="nav_item">
-              <a href="">고객센터</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div>
-          <ul class="banner">
-            <li class="banner_item">
-              <a href="">Brand</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Menu</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Event</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Membership</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Store</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="ban_inner_con">
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">브랜드 스토리</a>
-            </li>
-            <li>
-              <a href="">회사 연혁</a>
-            </li>
-            <li>
-              <a href="">브랜드 소개</a>
-            </li>
-            <li>
-              <a href="">오시는 길</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">커피</a>
-            </li>
-            <li>
-              <a href="">라떼</a>
-            </li>
-            <li>
-              <a href="">에이드ㆍ주스</a>
-            </li>
-            <li>
-              <a href="">베이커리</a>
-            </li>
-            <li>
-              <a href="">MD상품</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">Notice</a>
-            </li>
-            <li>
-              <a href="">Event</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">Membership Card</a>
-            </li>
-            <li>
-              <a href="">Membership 혜택</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">매장 검색</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="headerscript.js"></script>
+    <div id="import_header"></div>
 
   <div class="container">
 
@@ -197,7 +80,6 @@
           <input type="tel" class="inputPhoneNum">
           <button type="button" class="btnCheck numChk">인증번호 발송</button>
         </div>
-        <!-- 여유있으면 인증번호란 만들기 -->
         <div class="vertif">
           <p class="pfont">인증번호</p>
           <input type="text" class="verfif_input" placeholder="인증번호 입력">
@@ -222,9 +104,19 @@
       </form>
     </div>
   </div>
+  <div id="import_footer"></div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+  integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
   <script>
+    $(document).ready(function(){
+      $('#import_header').load("header.html");
+      $('#import_footer').load("footer.html")
+    });
+    
     window.onload = () => {
       const btnDoubleChk = document.querySelector('.btnCheck');
       const tempId = document.querySelector('.id');
@@ -243,10 +135,8 @@
             confirmButtonText: '사용',
             cancelButtonColor: 'rgb(0,0,0)',
             confirmButtonColor: 'rgb(231, 147, 74)'
-            // closeOnClickOutside: true
           }).then(function(result){
             if(!result.isConfirmed){
-              // elPw.focus();
               tempId.value = '';
             }
           });
@@ -259,9 +149,7 @@
         }
       });
 
-      function $ComTimer(){
-          //prototype extend
-      }
+      function $ComTimer(){}
 
       $ComTimer.prototype = {
         comSecond : "",
@@ -297,10 +185,9 @@
         verChk.addEventListener('click', function(){
           AuthTimer.fnStop();
           AuthTimer.timerSpan.innerText = '';
-        })
+          el_vertif.style.height = '0';
+        });
       });
-
-
     };
 
   </script>

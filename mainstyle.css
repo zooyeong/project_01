@@ -66,7 +66,6 @@
   height: 100%;
 }
 
-/* slider btns */
 .btns{
 	position:absolute;
 	width:50px;
@@ -98,7 +97,6 @@
 #slider-wrap.active #next{right:0px;}
 #slider-wrap.active #previous{left:0px;}
 
-/* slider bar */
 #pagination-wrap{
 	min-width:20px;
 	margin-top:350px;
@@ -133,7 +131,6 @@
 	box-shadow:rgba(0,0,0,0.1) 1px 1px 0px;	
 }
 
-/* slider animation */
 #slider-wrap ul, #pagination-wrap ul li{
 	-webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
 	-moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
@@ -166,7 +163,7 @@
   font-family:'GangwonEduPowerExtraBoldA';
   color: white;
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
 .main::after{
@@ -176,6 +173,21 @@
 }
 
 .main2, .main3{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu_plus1, .menu_plus2{
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  background-color: white;
+  border-radius: 50%;
   text-align: center;
 }
 
@@ -191,6 +203,7 @@
 }
 
 .menu_wrapper2{
+  /* position: relative; */
   margin-top: 50px; 
   background-color: rgba(163, 211, 66, 0.7);
 }
@@ -202,7 +215,7 @@
   opacity: 0.7;
 }
 
-.main2 img, .main3 img{
+.main2 img, .main3 img:first-child{
   transition: .8s ease;
 }
 
@@ -227,8 +240,13 @@
   font-size: 20px;
 }
 
-.main2 img:hover, .main3 img:hover{
+.main2 img:hover, .main3 img:first-child:hover{
   transform: scale(1.1);
+}
+
+#img_muhwahwa{
+  position: absolute;
+  left: 70px;
 }
 
 /* FRANCHISE, STORE, GIFT CARD */
@@ -252,36 +270,28 @@
   height: 200px;
 }
 
-.franchise{
+.franchise, .search{
   float: left;
   width: 350px;
   height: 200px;
   border: 3px solid rgb(231, 147, 74);
-  padding-left: 10px;
+  padding: 10px;
   position: relative;
 }
 
 .franchise img{
   position: absolute;
-  right: 20px;
-  /* opacity: 0.7; */
+  right: 10px;
+  bottom: 20px;
 }
 
 .search{
-  float: left;
-  position: relative;
-  width: 350px;
-  height: 200px;
-  border: 3px solid rgb(231, 147, 74);
-  padding-left: 10px;
-  position: relative;
   margin: 0 10px;
 }
 
 .franchise h1, .search h1{
   color: rgb(231, 147, 74);
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
-  margin-top: 5px;
   font-family: inherit;
 }
 
@@ -289,11 +299,16 @@
   width: 90%;
   height: 40px;
   padding-left: 5px;
-  /* margin-top: 5px; */
   font-family: inherit;
   position: absolute;
   right: 10px;
   bottom: 20px;
+  border: 2px solid rgb(156, 86, 61);
+  border-radius: 0.3em;
+}
+
+.search input::placeholder{
+  color: rgb(156, 86, 61);
 }
 
 .search button{
@@ -306,9 +321,10 @@
 }
 
 .franchise h4, .search h4{
-  color: black;
+  color: rgb(156, 86, 61);
+  /* color: rgb(102, 44, 6); */
   font-family: 'GangwonEduPowerExtraBoldA';
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 7px;
 }
 
@@ -353,7 +369,6 @@
   margin: 0 auto;
   width: 50%;
   height: 200px;
-  /* border-bottom: 1px solid darkgray; */
   float: left;
 }
 
@@ -399,20 +414,3 @@
   position: absolute;
   right: 0;
 }
-
-
-/* 미디어쿼리 */
-/* @media screen and (min-width:1290px) {
-  .main{
-    left:25%;
-  }
-  .main2{
-    left: 25%;
-  }
-  .main3{
-    left: 25%;
-  }
-  .main4{
-    left:25%
-  }
-} */

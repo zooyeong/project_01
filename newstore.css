@@ -1,7 +1,6 @@
 .main_ns{
   text-align: center;
   padding-top: 10px;
-  /* position: relative; */
 }
 
 .main_ns > .headline{
@@ -10,7 +9,6 @@
   font-size: 3rem;
   font-family: inherit;
   font-style: italic;
-  /* font-family: 'Cafe24Ssurround'; */
   background-color: rgb(243, 78, 78);
   text-shadow: rgba(0,0,0,0.4) -7px 7px 1px;
   color: white;
@@ -23,11 +21,9 @@
   justify-content: center;
   width: 100%;
   min-width: 1200px;
-  /* background-color: rgb(233, 186, 144); */
 }
 
 .store_list{
-  /* border: 1px solid black; */
   border-radius: 5%;
   width: 300px;
   height: 400px;
@@ -78,9 +74,6 @@ figure figcaption{
   z-index: 100;
 }
 
-/* .map_container > div:nth-of-type(2){
-  position: relative;
-} */
 .map_wrapper{
   width: 450px;
   height: 470px;
@@ -90,16 +83,12 @@ figure figcaption{
   position: absolute;
   top: 0;
   left: 0;
-  /* left: 56.1%; */
 }
 .map_after{
   position: absolute;
   top: 0;
   left: 0;
-  /* bottom: 4px; */
-  /* top: 5px; */
 }
-
 
 @keyframes effect{
   50% {
@@ -110,44 +99,57 @@ figure figcaption{
   animation: effect 1s step-end infinite;
 }
 
-
-
 .store_wrap{
   width: 1200px;
   min-width: 1200px;
   height: 700px;
   position: relative;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 #harf_circle{
   width: 50%;
   height: 80%;
-  border: 1px solid black;
+  border: 2px solid black;
   border-left: none;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   float: left;
   text-align: left;
+  padding: 140px 30px;
 }
 
 #harf_circle > img{
-  margin: 0 auto;
+  margin-left: 150px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-bottom: 7px solid black;
 }
 
-#harf_circle > h1, #harf_circle > h3{
+#harf_circle > h1, #harf_circle > h3, #harf_circle > a > p{
   font-family: 'GangwonEduPowerExtraBoldA';
+  margin-top: 7px;
 }
 
 #harf_circle > h1{
   font-size: 2.7rem;
-  /* margin: 30px 0; */
+}
+
+#harf_circle > a > p{
+  color: black;
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  border: 4px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 120px;
 }
 
 #harf_line{
   width: 50%;
   height: 60%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   float: left;
   align-items: center;
 }
@@ -160,7 +162,7 @@ figure figcaption{
 #img_cafe{
   width: 200px;
   top: 20px;
-  left: 400px;
+  left: 500px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   z-index: 1;
@@ -169,7 +171,7 @@ figure figcaption{
 
 #img_cappuccino{
   top: 340px;
-  left: 400px;
+  left: 500px;
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
   border-bottom-left-radius: 45%;
@@ -179,29 +181,29 @@ figure figcaption{
 
 #img_cf_machine{
   top: 25px;
-  left: 620px;
+  left: 720px;
   border-top-right-radius: 50%;
   z-index: 0;
 }
 
 #img_cfshop{
-  top: 240px;
-  left: 620px;
+  top: 235px;
+  left: 720px;
   z-index: 0;
 }
 
 .inquiry_wrap{
   width: 100%;
+  max-width: 1200px;
   min-width: 1200px;
+  margin: 0 auto;
   height: 600px;
-  /* position: absolute; */
   background-color: rgb(250, 250, 237);
-  /* color: lightgray; */
   padding-top: 10px;
 }
 
 .inquiry_wrap > h1{
-  color: orange;
+  color: rgba(163, 211, 66, 0.7);
   font-family: 'GangwonEduPowerExtraBoldA';
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
   margin-top: 10px;
@@ -219,7 +221,7 @@ figure figcaption{
   width: 23%;
   margin: 1%;
   height: 15em;
-  border: 0.6em solid orange;
+  border: 0.6em solid rgba(163, 211, 66, 0.7);
   border-bottom-right-radius: 15%;
   box-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
   display: flex;
@@ -234,7 +236,7 @@ figure figcaption{
   position: absolute;
   left: 0;
   top: 0;
-  color: orange;
+  color: rgba(163, 211, 66, 0.7);
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
   background-color: rgb(250, 250, 237);
   transform: translate(-30%, -30%);
@@ -248,7 +250,7 @@ figure figcaption{
 
 .benefit span{
   font-size: 2rem;
-  color: orange;
+  color: rgba(163, 211, 66, 0.7);
 }
 
 .benefit p{
@@ -264,6 +266,7 @@ figure figcaption{
   margin: 20px auto;
   width: 80%;
   background-color: rgba(128, 74, 28,0.7);
+  border-radius: 10px;
   color: white;
   position: relative;
   height: 40%;
@@ -277,7 +280,7 @@ figure figcaption{
   top: 0;
   left: 10px;
   transform: translate(0, -15px);
-  background-color: rgba(255, 165, 0, 0.7);
+  background-color: rgba(163, 211, 66, 0.7);
   border-radius: 0.3em;
   width: 25%;
   height: 40px;
@@ -290,7 +293,6 @@ figure figcaption{
 
 .promotion > h1 > span{
   color: rgb(128, 74, 28);
-  font-family: 'GangwonEduPowerExtraBoldA';
   text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
   margin: 0 10px;
 }
@@ -305,14 +307,12 @@ figure figcaption{
 }
 
 .promotion h2 p{
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(163, 211, 66, 0.7);
   border-radius: 3em;
   width: 30%;
-  /* margin: 0 10px; */
   font-size: 1rem;
   position: absolute;
 }
-
 
 .promotion h2 p:nth-of-type(1){
   left: 20px;
@@ -340,12 +340,23 @@ figure figcaption{
   }
 }
 
+@keyframes effect_X{
+  0%{
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .animatable{
   visibility: hidden;
   animation-play-state: paused;
 }
 
-.animated{
+.animatedY{
   animation-name: effect_Y;
   visibility: visible;
   animation-fill-mode: both;
@@ -354,20 +365,25 @@ figure figcaption{
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
   animation-direction: normal;
-  /* animation-fill-mode: forwards; */
 }
 
-@media screen and (min-width:1290px) {
-  .main{
-    left:25%;
-  }
-  .main2{
-    left: 25%;
-  }
-  .main3{
-    left: 25%;
-  }
-  .main4{
-    left:25%
-  }
+.animatedX{
+  animation-name: effect_X;
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-play-state: running;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.animated_delay2{
+  animation-delay: 0.3s;
+}
+.animated_delay3{
+  animation-delay: 0.6s;
+}
+.animated_delay4{
+  animation-delay: 0.9s;
 }

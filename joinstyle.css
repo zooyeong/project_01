@@ -2,7 +2,6 @@
   width: 1200px;
   min-width: 1200px;
   position: relative;
-  /* top: 280px;  */
   z-index: 0;
   margin: 50px auto;
 }
@@ -52,7 +51,6 @@ h1{
 
 .content li{
   margin-top: 20px;
-  /* border-radius: 50px; */
   text-align: center;
   height: 50px;
   line-height: 50px;
@@ -68,7 +66,6 @@ h1{
 
 .join_start{
   position: relative;
-  /* border-top: 1px solid lightgray; */
 }
 
 .join_start div{
@@ -92,8 +89,6 @@ h1{
 
 .join_start a{
   color: black;
-  /* font-weight: 600; */
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .naver{

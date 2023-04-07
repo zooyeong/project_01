@@ -8,315 +8,13 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="headerstyle.css">
+  <link rel="stylesheet" href="loginstyle.css">
   <link rel="stylesheet" href="footerstyle.css">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .container {
-      width: 1200px;
-      min-width: 1200px;
-      /* position: relative; */
-      /* top: 280px; */
-      z-index: 0;
-      margin: 50px auto;
-    }
-
-    .container::after {
-      content: "";
-      clear: both;
-      display: block;
-    }
-
-    .align {
-      float: left;
-      width: 300px;
-      margin: 0 100px;
-    }
-
-    .align>ul>li {
-      font-size: 1.5rem;
-      font-family: 'GangwonEduPowerExtraBoldA';
-      margin-bottom: 20px;
-    }
-
-    .align>ul>li>a{
-      color: black;
-    }
-
-    .align_2 {
-      margin: 50px 0;
-    }
-
-    .align_2 > a {
-      font-size: 1.3rem;
-      font-family: 'KIMM_Bold';
-      color: black;
-    }
-
-    .content {
-      float: left;
-      width: 700px;
-    }
-
-    .step {
-      color: rgb(131, 122, 117);
-    }
-
-    .login {
-      font-size: 3rem;
-      font-family: 'GangwonEduPowerExtraBoldA';
-      margin-top: 20px;
-    }
-
-    .welcome {
-      font-size: 5rem;
-      font-family: 'GangwonEduPowerExtraBoldA';
-      color: rgb(231, 147, 74);
-      text-shadow: rgba(0,0,0,0.1) 2px 2px 0px;
-      margin-top: 50px;
-    }
-
-    .comment {
-      font-size: 1.2rem;
-      color: rgb(131, 122, 117);
-      margin-top: 20px;
-    }
-
-    .in_ID,
-    .in_PW {
-      width: 110px;
-      display: inline-block;
-    }
-
-    .inputLogin {
-      width: 220px;
-      height: 30px;
-      padding-left: 10px;
-      border: 1px solid lightgray;
-    }
-
-    .mar_b_10 {
-      margin-bottom: 10px;
-    }
-
-    .btnLogin {
-      display: inline-block;
-      width: 80px;
-      height: 70px;
-      line-height: 70px;
-      border: none;
-      border-radius: 2px;
-      background-color: rgb(231, 147, 74);
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .btn_type1 {
-      border: none;
-      display: inline-block;
-      background-color: rgb(231, 147, 74);
-      color: white;
-    }
-
-    .loginBox ul {
-      position: relative;
-      width: 430px;
-      margin-top: 50px;
-    }
-
-    .btnLogin {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    .check_id {
-      clear: left;
-      padding-left: 115px;
-      margin-bottom: 30px;
-    }
-
-    .h_b_back1 {
-      height: 150px;
-      background: url(images/icon_id.png) 50px top no-repeat;
-    }
-
-    .h_b_back2 {
-      background: url(images/icon_password.png) 50px top no-repeat;
-    }
-
-    .h_b_back3 {
-      background: url(images/icon_join.png) 50px top no-repeat;
-    }
-
-    .help_box ul {
-      float: left;
-      width: 210px;
-      margin: 30px 10px;
-      padding: 110px 0 0 0;
-    }
-
-    .help_box {
-      border-top: 1px solid rgb(131, 122, 117);
-    }
-
-    .help_box>ul>li:nth-child(1) {
-      font-weight: bolder;
-    }
-
-    .help_box>ul>li:nth-child(2) {
-      font-size: small;
-    }
-
-    .help_box>ul>li {
-      margin: 10px 0;
-    }
-
-    .help_box>ul>li:last-child {
-      width: 120px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      margin-left: 50px;
-      background-color: rgb(181, 182, 173);
-      border: none;
-      border-radius: 5px;
-    }
-
-    .help_box>ul>li>a {
-      color: white;
-    }
-
-  </style>
-</head>
+  </head>
 
 <body>
   <div class="wrap">
-    <div class="header">
-      <div class="headinner">
-
-        <div class="logo">
-          <a href="mainpage.html">
-            <img src="images/logo.jpg" alt="로고" width="200px">
-          </a>
-        </div>
-
-        <div>
-          <ul class="nav">
-            <li class="nav_item">
-              <a href="login.html">멤버십 로그인</a>
-            </li>
-            <li class="nav_item">
-              <a href="join.html">멤버십 가입</a>
-            </li>
-            <li class="nav_item">
-              <a href="">고객센터</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="banner">
-            <li class="banner_item">
-              <a href="">Brand</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Menu</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Event</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Membership</a>
-            </li>
-            <li class="banner_item">
-              <a href="">Store</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="ban_inner_con">
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">브랜드 스토리</a>
-            </li>
-            <li>
-              <a href="">회사 연혁</a>
-            </li>
-            <li>
-              <a href="">브랜드 소개</a>
-            </li>
-            <li>
-              <a href="">오시는 길</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">커피</a>
-            </li>
-            <li>
-              <a href="">라떼</a>
-            </li>
-            <li>
-              <a href="">에이드ㆍ주스</a>
-            </li>
-            <li>
-              <a href="">베이커리</a>
-            </li>
-            <li>
-              <a href="">MD상품</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">Notice</a>
-            </li>
-            <li>
-              <a href="">Event</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">Membership Card</a>
-            </li>
-            <li>
-              <a href="">Membership 혜택</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="ban_inner">
-            <li>
-              <a href="">매장 검색</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="headerscript.js"></script>
+    <div id="import_header"></div>
 
     <div class="container">
 
@@ -379,32 +77,26 @@
           <ul class="h_b_back3">
             <li class>주디의 회원이 아니신가요?</li>
             <li>가입 후 다양한 혜택을 누리세요.</li>
-            <li><a href="">멤버십 가입</a></li>
+            <li><a href="join.html">멤버십 가입</a></li>
           </ul>
         </div>
 
       </div>
     </div>
 
-    <div class="footer">
-      <ul>
-        <li><a href="">개인정보처리방침 | </a></li>
-        <li><a href="">서비스이용약관 | </a></li>
-        <li><a href="">멤버십이용약관 | </a></li>
-        <li><a href="">주디카드이용약관 | </a></li>
-        <li><a href="">고객문의 | </a></li>
-        <li><a href="">고객설문 | </a></li>
-        <li><a href="">사이트맵 | </a></li>
-        <li><a href="">BI 소개</a></li>
-      </ul>
-      <p>법인명 : (주)주디주식회사 대표자 : 박주영 사업자등록번호 : 961-11-59611 고객센터 : 1544-9611</p>
-      <p>주소 : 충청남도 천안시 동남구 대흥로 215 대표전화 : 1544-9611 가맹문의 : 1544-1196</p>
-      <p>COPYRIGHTⓒ 2015 JUDY F&B ALL RIGHTS RESERVED</p>
-    </div>
+    <div id="import_footer"></div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+  integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
+    $(document).ready(function(){
+      $('#import_header').load("header.html");
+      $('#import_footer').load("footer.html")
+    });
+
     window.onload = () => {
       const inputId = document.querySelector('.inputLogin');
       const inputPw = document.querySelector('.pw');
